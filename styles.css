@@ -61,7 +61,7 @@ form a:hover {
     text-decoration: none;
 }
 
-form input[type="button"] {
+form input[type="submit"] {
     background-color: var(--main-color);
     color: white;
     border: none;
@@ -75,12 +75,12 @@ form input[type="button"] {
     transition: 0.3s ease;
 }
 
-form input[type="button"]:hover {
+form input[type="submit"]:hover {
     box-shadow: var(--hover-shadow);
     transform: translateY(-3px);
 }                                    /* hover effects with animation */
 
-form input[type="button"]:active {
+form input[type="submit"]:active {
     transform: translateY(0px);
     box-shadow: var(--box-shadow);
 }
