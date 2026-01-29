@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">  <!-- is a wrapper for the entire page -->
+    <div class="header"> <!-- header (for logos, navs, etc.)-->
+        <h1>Login Page</h1>
+    </div>
+    <form action="">
+        <label for="" id="req">* Required</label>
+        <label for="">Email or Username:</label> <!-- Label for user input-->
+        <input 
+        type="text"
+        id="username"
+        name="username"
+        required
+        placeholder="Enter your email or username"
+        minlength="3"
+        maxlength="30"
+        size="21" /> <!-- input element, Some sort of textbox-->
+        <label for="">Password:</label> <!-- Label for password input-->
+        <input 
+        type="password"
+        id="password"
+        name="password"
+        required
+        placeholder="Enter your password"
+        minlength="3"
+        maxlength="30"
+        size="14" />
+        <input type="button" value="Login"> <!-- login button-->
+        <a href="#">Forgot password?</a> <!-- Hyperlink for forgotten password -->
+    </form>
+
+    <!-- Footer Section -->
+     <div class="footer">
+            <h3>Login with another account</h3>
+            <div class="images">
+            <img src="images/google.svg" alt="Google Icon">
+            <img src="images/facebook.svg" alt="Facebook Icon">
+            <img src="images/twitter.svg" alt="Twitter Icon">
+            <img src="images/github.svg" alt="GitHub Icon">
+            <img src="images/apple.svg" alt="Apple Icon">
+            </div>
+            <a href="#">Create a new account</a> <!-- Hyperlink for creating a new account -->
+
+
+     </div>
+
+
+
+    </div>
+</body>
+</html>

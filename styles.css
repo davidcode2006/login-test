@@ -1,0 +1,135 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* defining variables for consistent styling and to prevent override */
+:root {
+    --main-color: #c449f5;
+    --box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2); 
+    --hover-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3); /*for hovering effects */
+    --nav-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.100);
+    --light-black: #141c3a;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f8e1cb;
+}
+
+.container {
+    width: 28%;
+    margin: 100px auto; /* centering the container by using the auto value */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+form label {
+    margin: 5px 0;
+}
+
+/* styles multiple elements (text and password input fields) */
+form input[type="text"], input[type="password"]  {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    height: 40px;
+    margin: 5px 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form a {
+    text-decoration: underline;
+    color: var(--main-color); /* calling out the variable defined earlier */
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0;
+    display: inline-block;
+    align-self: flex-start; /* aligns the link to its own area and not stretch across the form (due to flex element)*/
+}
+
+form a:hover {
+    text-decoration: none;
+}
+
+form input[type="button"] {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 16px;            /* button styling including vars declared earlier */
+    font-weight: bold;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+form input[type="button"]:hover {
+    box-shadow: var(--hover-shadow);
+    transform: translateY(-3px);
+}                                    /* hover effects with animation */
+
+form input[type="button"]:active {
+    transform: translateY(0px);
+    box-shadow: var(--box-shadow);
+}
+
+#req {
+    margin-bottom: 15px;
+}
+
+.footer h3 {
+    font-size: 16px;
+}
+
+.footer .images {
+    display: flex;
+    height: 10vh;
+    justify-content: flex-start;  /* aligns images to the left */
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.footer .images img {
+    height: 80%;
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px;
+    transition: 0.3s ease;
+}
+
+.footer .images img:hover {
+    box-shadow: var(--nav-shadow);
+    transform: translateY(-3px);
+}                                       /* hover effects with animation */
+
+.footer .images img:active {
+    transform: translateY(0px);
+    box-shadow: var(--box-shadow);
+}
+
+.footer a {
+    float: right;
+    padding-top: 20px;
+    text-decoration: underline;
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
